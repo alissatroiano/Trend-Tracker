@@ -44,6 +44,10 @@
   padding: 10px;
 }
 
+.chart-title {
+  color: #fb65b7;
+}
+
 .card {
   margin: 0 auto;
   float: none;

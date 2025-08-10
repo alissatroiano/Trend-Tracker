@@ -44,7 +44,6 @@ class NewUserChart extends Component<Props> {
               options={this.state.options}
               series={this.state.series}
               type="bar"
-              width="400"
             />
           </div>
         </div>
