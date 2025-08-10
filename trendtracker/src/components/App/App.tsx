@@ -13,7 +13,9 @@ function App() {
       <Container>
         <Row>
           <Col>
+          <div className="img-wrapper">
               <img src={appLogo} className="logo" alt="trend-tracker" />
+          </div>
           </Col>
         </Row>
         <Row>
