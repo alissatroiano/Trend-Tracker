@@ -1,0 +1,28 @@
+{
+  "name": "trend-tracker",
+  "version": "1.0.0",
+  "description": "fluency trend tracker",
+  "keywords": [
+    "data",
+    "fluency",
+    "apex"
+  ],
+  "homepage": "https://github.com/alissatroiano/Trend-Tracker#readme",
+  "bugs": {
+    "url": "https://github.com/alissatroiano/Trend-Tracker/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alissatroiano/Trend-Tracker.git"
+  },
+  "license": "ISC",
+  "author": "Alissa Troiano",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "dependencies": {
+    "apexcharts": "^5.3.2"
+  }
+}
