@@ -4,13 +4,13 @@ import './App.css'
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import NewUserChart from '../NewUserChart/NewUserChart';
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <Container>
+      <Container className="container app-container">
         <Row>
           <Col>
             <div className="img-wrapper">
@@ -18,24 +18,24 @@ function App() {
             </div>
           </Col>
         </Row>
-        <Row className='d-flex flex-row justify-content-center'>
-          <Col className='col-12 col-sm-6 flex-col'>
+        <Row className='d-flex flex-row justify-content-center chart-row'>
+          <Col className='col-12 col-sm-6 flex-col card-col'>
             <div className='card'>
               <div className='card-header'>
                 <h1 className='display-3'>New Users</h1>
               </div>
               <div className='card-body'>
-                <p >This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+                <NewUserChart />
               </div>
             </div>
           </Col>
-          <Col className='col-12 col-sm-6 flex-col'>
+          <Col className='col-12 col-sm-6 flex-col card-col'>
             <div className='card'>
               <div className='card-header'>
                 <h1 className='display-3'>New Users</h1>
               </div>
               <div className='card-body'>
-                           <p >This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+                <NewUserChart />
               </div>
             </div>
           </Col>
