@@ -3,33 +3,23 @@ import Chart from "react-apexcharts";
 
 interface Props {}
 
-class NewUserChart extends Component<Props> {
+class ComparisonChart extends Component<Props> {
   constructor(props: Props) {
     super(props);
 
     this.state = {
       options: {
         chart: {
-          id: "basic-bar"
+          id: "basicBar"
         },
         xaxis: {
-          categories: Array.from({length: 10}, (_, i) => {
-            const date = new Date();
-            date.setDate(date.getDate() - (9 - i));
-            return date.toLocaleDateString('en-US', {month: 'short', day: 'numeric'});
-          }),
-          labels: {
-            show: true,
-            style: {
-              colors: '#333'
-            }
-          }
+          categories: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
         }
       },
       series: [
         {
           name: "Users",
-          data: [3,5,1,0,2,7,1,9,13,3]
+          data: [2,-3,5,1,-1,0,-2,4,1,-2,5,7,-3,0,1,-1]
         }
       ]
     };
@@ -43,7 +33,7 @@ class NewUserChart extends Component<Props> {
             <Chart
               options={this.state.options}
               series={this.state.series}
-              type="bar"
+              type="line"
               width="400"
             />
           </div>
@@ -53,4 +43,4 @@ class NewUserChart extends Component<Props> {
   }
 }
 
-export default NewUserChart;
+export default ComparisonChart;

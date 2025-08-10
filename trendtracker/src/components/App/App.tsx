@@ -5,12 +5,13 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import NewUserChart from '../NewUserChart/NewUserChart';
+import ComparisonChart from '../ComparisonChart/ComparisonChart.tsx';
 
 function App() {
 
   return (
     <>
-      <Container className="container app-container">
+      <Container className="container-fluid app-container">
         <Row>
           <Col>
             <div className="img-wrapper">
@@ -22,7 +23,7 @@ function App() {
           <Col className='col-12 col-sm-6 flex-col card-col'>
             <div className='card'>
               <div className='card-header'>
-                <h1 className='display-3'>New Users</h1>
+                 <h2 className='display-3'>New Users</h2>
               </div>
               <div className='card-body'>
                 <NewUserChart />
@@ -32,10 +33,10 @@ function App() {
           <Col className='col-12 col-sm-6 flex-col card-col'>
             <div className='card'>
               <div className='card-header'>
-                <h1 className='display-3'>New Users</h1>
+                <h2 className='display-3'> Users Gained & Lost</h2>
               </div>
               <div className='card-body'>
-                <NewUserChart />
+                <ComparisonChart />
               </div>
             </div>
           </Col>
