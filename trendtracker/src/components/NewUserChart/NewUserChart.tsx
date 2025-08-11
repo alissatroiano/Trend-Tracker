@@ -1,7 +1,8 @@
 import { Component } from "react";
 import Chart from "react-apexcharts";
+import './NewUserChart.css';
 
-interface Props {}
+interface Props { }
 
 class NewUserChart extends Component<Props> {
   constructor(props: Props) {
@@ -10,26 +11,57 @@ class NewUserChart extends Component<Props> {
     this.state = {
       options: {
         chart: {
-          id: "basic-bar"
+          id: "basic-bar",
+          background: 'transparent',
+          toolbar: {
+            show: false
+          }
+        },
+        colors: ['#dc81f3ff'],
+        grid: {
+          borderColor: '#e7e7e7',
+          strokeDashArray: 3
+        },
+        plotOptions: {
+          bar: {
+            borderRadius: 4,
+            columnWidth: '60%'
+          }
         },
         xaxis: {
-          categories: Array.from({length: 10}, (_, i) => {
+          categories: Array.from({ length: 10 }, (_, i) => {
             const date = new Date();
             date.setDate(date.getDate() - (9 - i));
-            return date.toLocaleDateString('en-US', {month: 'short', day: 'numeric'});
+            return date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
           }),
           labels: {
             show: true,
             style: {
-              colors: '#333'
+              colors: '#85d2ddff',
+              fontSize: '12px',
+              fontWeight: 'bold'
+
             }
+          }
+        },
+        yaxis: {
+          labels: {
+            style: {
+              colors: '#ffcf21ff',
+              fontWeight: 'bold'
+            }
+          }
+        },
+        title: {
+          style: {
+            color: '#fafafa'
           }
         }
       },
       series: [
         {
           name: "Users",
-          data: [3,5,1,0,2,7,1,9,13,3]
+          data: [3, 5, 1, 0, 2, 7, 1, 9, 13, 3]
         }
       ]
     };
@@ -44,6 +76,7 @@ class NewUserChart extends Component<Props> {
               options={this.state.options}
               series={this.state.series}
               type="bar"
+              width="400"
             />
           </div>
         </div>

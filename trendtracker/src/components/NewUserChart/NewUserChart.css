@@ -1,0 +1,15 @@
+@import url("https://use.typekit.net/okm0fpl.css");
+
+.apexcharts-text tspan {
+  font-family: 'Futura-PT', sans-serif;
+}
+
+.mixed-chart {
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.apexcharts-canvas {
+  margin: 0 auto;
+}
+
