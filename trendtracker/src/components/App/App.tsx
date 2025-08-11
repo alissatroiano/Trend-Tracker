@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import appLogo from '/header.png'
+import appLogo from '/trend-tracker2.png'
 import './App.css'
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
