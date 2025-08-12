@@ -1,0 +1,25 @@
+@import url("https://use.typekit.net/okm0fpl.css");
+
+.apexcharts-text tspan,
+text.apexcharts-text.apexcharts-xaxis-label,
+.apexcharts-xaxis-label,
+.apexcharts-yaxis-label,
+.apexcharts-text {
+  font-family: 'Futura-PT', sans-serif !important;
+}
+
+.mixed-chart {
+  padding: 20px;
+  border-radius: 8px;
+  font-family: 'Futura-PT', sans-serif;
+}
+
+.apexcharts-canvas {
+  margin: 0 auto;
+}
+
+.app {
+  font-family: 'Futura-PT', sans-serif;
+  text-align: center;
+  margin-top: 20px;
+}

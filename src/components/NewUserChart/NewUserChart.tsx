@@ -4,7 +4,12 @@ import'./NewUserChart.css';
 
 interface Props {}
 
-class NewUserChart extends Component<Props> {
+interface State {
+  options: any;
+  series: any[];
+}
+
+class NewUserChart extends Component<Props, State> {
   constructor(props: Props) {
     super(props);
 
@@ -17,9 +22,9 @@ class NewUserChart extends Component<Props> {
             show: false
           }
         },
-        colors: ['#dc81f3ff'],
+        colors: ['#00E396'],
         grid: {
-          borderColor: '#e7e7e7',
+          borderColor: '#e7e7e79d',
           strokeDashArray: 3
         },
         plotOptions: {
@@ -61,7 +66,7 @@ class NewUserChart extends Component<Props> {
       },
       series: [
         {
-          name: "Users",
+          name: "New Users",
           data: [3,5,1,0,2,7,1,9,13,3]
         }
       ]

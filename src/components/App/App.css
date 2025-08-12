@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
 #root {
   max-width: 100%;
   height: auto;
@@ -5,15 +7,24 @@
   text-align: center;
 }
 
-.logo {
-  height: 10em;
+.img-wrapper {
+  max-width: 100%;
+  height: auto;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+    height: 5em;
+
+  margin-top: 20px;
   will-change: filter;
   transition: filter 300ms;
 }
 
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 2em #3d1ca74e);
 }
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
@@ -51,7 +62,9 @@ tspan {
 }
 
 .chart-title {
-  color: #fb65b7;
+  color: #fafafa;
+  font-family: 'Futura-PT', sans-serif;
+  text-transform: uppercase;
 }
 
 .card {

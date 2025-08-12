@@ -1,17 +1,14 @@
-@import url("https://use.typekit.net/okm0fpl.css");
-
-
 .apexcharts-text tspan,
 text.apexcharts-text.apexcharts-xaxis-label,
 .apexcharts-xaxis-label,
 .apexcharts-yaxis-label,
 .apexcharts-text {
-  font-family: 'Futura-PT', sans-serif !important;
+  font-family: "Rajdhani", sans-serif;
   font-weight: 500 !important;
 }
 
 .mixed-chart {
-  padding: 20px;
+  padding: 10px;
   border-radius: 8px;
 }
 
