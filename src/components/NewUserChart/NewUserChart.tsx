@@ -62,6 +62,21 @@ class NewUserChart extends Component<Props, State> {
           style: {
             color: '#fafafa'
           }
+        },
+        tooltip: {
+          theme: 'dark',
+          style: {
+            fontSize: '12px',
+            fontFamily: 'Futura-PT, sans-serif'
+          },
+          x: {
+            show: true
+          },
+          y: {
+            formatter: function(val: number) {
+              return val + ' users';
+            }
+          }
         }
       },
       series: [

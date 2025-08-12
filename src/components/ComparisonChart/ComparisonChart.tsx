@@ -74,6 +74,21 @@ class ComparisonChart extends Component<Props, State> {
         grid: {
           borderColor: '#e7e7e794',
           strokeDashArray: 3
+        },
+        tooltip: {
+          theme: 'dark',
+          style: {
+            fontSize: '12px',
+            fontFamily: 'Futura-PT, sans-serif'
+          },
+          x: {
+            show: true
+          },
+          y: {
+            formatter: function(val: number) {
+              return val > 0 ? '+' + val + ' users' : val + ' users';
+            }
+          }
         }
       },
       series: [
@@ -94,7 +109,7 @@ class ComparisonChart extends Component<Props, State> {
               options={this.state.options}
               series={this.state.series}
               type="bar"
-              width="400px"
+              width="100%"
             />
           </div>
         </div>
