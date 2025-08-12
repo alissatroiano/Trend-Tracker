@@ -9,7 +9,6 @@ text.apexcharts-text.apexcharts-xaxis-label,
 }
 
 .mixed-chart {
-  padding: 20px;
   border-radius: 8px;
   font-family: 'Futura-PT', sans-serif;
 }
@@ -21,11 +20,6 @@ text.apexcharts-text.apexcharts-xaxis-label,
 .app {
   font-family: 'Futura-PT', sans-serif;
   text-align: center;
-  margin-top: 20px;
-}
-
-.mixed-chart .apexcharts-canvas {
-  width: 100% !important;
 }
 
 @media (min-width: 768px) {

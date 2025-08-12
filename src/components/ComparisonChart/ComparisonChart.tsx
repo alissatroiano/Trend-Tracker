@@ -109,7 +109,7 @@ class ComparisonChart extends Component<Props, State> {
               options={this.state.options}
               series={this.state.series}
               type="bar"
-              width="100%"
+              width="400px"
             />
           </div>
         </div>

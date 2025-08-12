@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap");
 
-#root {
-  max-width: 100%;
-  height: auto;
-  margin: 0 auto;
-  text-align: center;
+.app-container {
+  margin: 0px auto;
+  background: linear-gradient(rgba(13, 0, 49, 0.867), rgba(20, 2, 57, 0.904)), url('../../assets/bg-img.jpg') no-repeat center center;
 }
+
 
 .img-wrapper {
   max-width: 100%;
@@ -16,7 +15,7 @@
 }
 
 .logo {
-    height: 5em;
+  height: 5em;
 
   margin-top: 20px;
   will-change: filter;
@@ -39,7 +38,6 @@
   }
 }
 
-
 /* ------ Charts */
 tspan {
   color: #fafafa;
@@ -54,17 +52,25 @@ tspan {
 .flex-row {
   margin: 0 auto;
   justify-content: center;
+  max-width: 100%;
 }
 
-.app-container {
-  margin: 0px auto;
+.chart-row {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.card-col {
+  display: flex;
+  justify-content: center;
   padding: 10px;
 }
 
 .chart-title {
   color: #fafafa;
-  font-family: 'Futura-PT', sans-serif;
+  font-family: "Futura-PT", sans-serif;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .card {
@@ -73,12 +79,16 @@ tspan {
 }
 
 @media (min-width: 768px) {
-.flex-row {
-  display: flex;
-  justify-content: center;
-}
+  .flex-row {
+    display: flex;
+    justify-content: center;
+  }
   .card {
     padding: 20px;
+  }
+  .card-col {
+    padding: 15px;
+    max-width: 50%;
   }
   .logo {
     height: 20em;

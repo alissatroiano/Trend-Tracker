@@ -4,7 +4,6 @@
 :root {
   line-height: 1.5;
   font-weight: 400;
-  background: linear-gradient(rgba(13, 0, 49, 0.867), rgba(20, 2, 57, 0.904)), url('assets/bg-img.jpg') no-repeat center center;
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   font-synthesis: none;
@@ -23,11 +22,7 @@ a:hover {
 }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  margin: 0px auto;
 }
 
 h1 {
