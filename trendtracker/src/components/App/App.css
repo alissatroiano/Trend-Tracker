@@ -28,6 +28,12 @@
   }
 }
 
+
+/* ------ Charts */
+tspan {
+  color: #fafafa;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {
     animation: logo-spin infinite 20s linear;
@@ -42,6 +48,10 @@
 .app-container {
   margin: 0px auto;
   padding: 10px;
+}
+
+.chart-title {
+  color: #fb65b7;
 }
 
 .card {

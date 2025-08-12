@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import appLogo from '/trend-tracker.png'
+import appLogo from '/logo-dark.png'
 import './App.css'
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -23,7 +23,7 @@ function App() {
           <Col className='col-12 col-sm-6 flex-col card-col'>
             <div className='card'>
               <div className='card-header'>
-                 <h2 className='display-3'>New Users</h2>
+                 <h2 className='display-3 chart-title'>New Users</h2>
               </div>
               <div className='card-body'>
                 <NewUserChart />
