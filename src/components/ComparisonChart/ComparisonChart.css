@@ -23,3 +23,14 @@ text.apexcharts-text.apexcharts-xaxis-label,
   text-align: center;
   margin-top: 20px;
 }
+
+.mixed-chart .apexcharts-canvas {
+  width: 100% !important;
+}
+
+@media (min-width: 768px) {
+  .mixed-chart .apexcharts-canvas {
+    width: 400px !important;
+    max-width: 400px !important;
+  }
+}
