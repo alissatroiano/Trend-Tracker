@@ -1,8 +1,8 @@
 import { Component } from "react";
 import Chart from "react-apexcharts";
-import './NewUserChart.css';
+import'./NewUserChart.css';
 
-interface Props { }
+interface Props {}
 
 class NewUserChart extends Component<Props> {
   constructor(props: Props) {
@@ -29,18 +29,19 @@ class NewUserChart extends Component<Props> {
           }
         },
         xaxis: {
-          categories: Array.from({ length: 10 }, (_, i) => {
+          categories: Array.from({length: 10}, (_, i) => {
             const date = new Date();
             date.setDate(date.getDate() - (9 - i));
-            return date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+            return date.toLocaleDateString('en-US', {month: '2-digit', day: '2-digit'});
           }),
+          tickAmount: 10,
           labels: {
             show: true,
+            hideOverlappingLabels: false,
             style: {
               colors: '#85d2ddff',
-              fontSize: '12px',
+              fontSize: '10px',
               fontWeight: 'bold'
-
             }
           }
         },
@@ -61,7 +62,7 @@ class NewUserChart extends Component<Props> {
       series: [
         {
           name: "Users",
-          data: [3, 5, 1, 0, 2, 7, 1, 9, 13, 3]
+          data: [3,5,1,0,2,7,1,9,13,3]
         }
       ]
     };
@@ -76,7 +77,7 @@ class NewUserChart extends Component<Props> {
               options={this.state.options}
               series={this.state.series}
               type="bar"
-              width="400"
+              width="100%"
             />
           </div>
         </div>

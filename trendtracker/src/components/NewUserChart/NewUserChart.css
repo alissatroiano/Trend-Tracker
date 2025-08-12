@@ -1,7 +1,13 @@
 @import url("https://use.typekit.net/okm0fpl.css");
 
-.apexcharts-text tspan {
-  font-family: 'Futura-PT', sans-serif;
+
+.apexcharts-text tspan,
+text.apexcharts-text.apexcharts-xaxis-label,
+.apexcharts-xaxis-label,
+.apexcharts-yaxis-label,
+.apexcharts-text {
+  font-family: 'Futura-PT', sans-serif !important;
+  font-weight: 500 !important;
 }
 
 .mixed-chart {
@@ -12,4 +18,3 @@
 .apexcharts-canvas {
   margin: 0 auto;
 }
-
