@@ -114,7 +114,7 @@ class ComparisonChart extends Component<Props, State> {
               type="line"
               maxWidth="100%"
               width={"400px"}
-              height={"auto"}
+              height={322}
             />
           </div>
         </div>

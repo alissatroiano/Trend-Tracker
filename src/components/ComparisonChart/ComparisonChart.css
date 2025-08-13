@@ -26,7 +26,7 @@ text.apexcharts-text.apexcharts-xaxis-label,
 span.apexcharts-legend-text {
   font-family: 'Futura-PT', sans-serif !important;
   color: #fafafa !important;
-  padding-top: 10px;
+  letter-spacing: .5px;
 }
 
 @media (min-width: 768px) {

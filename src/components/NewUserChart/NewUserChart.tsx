@@ -99,7 +99,7 @@ class NewUserChart extends Component<Props, State> {
               series={this.state.series}
               type="bar"
               width="400px"
-                            height={"auto"}
+               height={300}
               maxWidth="100%"
             />
           </div>
