@@ -82,7 +82,7 @@ class NewUserChart extends Component<Props, State> {
       series: [
         {
           name: "New Users",
-          data: [3,5,1,0,2,7,1,9,13,3]
+          data: [3,5,1,0,2,7,1,9,13,3,5,6,1,0].slice(-10)
         }
       ]
     };

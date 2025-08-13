@@ -16,32 +16,21 @@ class ComparisonChart extends Component<Props, State> {
     this.state = {
       options: {
         chart: {
-          id: "comparison-bar",
+          id: "comparison-line",
           background: 'transparent',
           toolbar: {
             show: false
           }
         },
         colors: ['#00E396', '#FF4560'],
-        plotOptions: {
-          bar: {
-            borderRadius: 4,
-            columnWidth: '60%',
-            colors: {
-              ranges: [
-                {
-                  from: -50,
-                  to: -1,
-                  color: '#FF4560'
-                },
-                {
-                  from: 0,
-                  to: 50,
-                  color: '#00E396'
-                }
-              ]
-            }
-          }
+        stroke: {
+          curve: 'smooth',
+          width: 3
+        },
+        markers: {
+          size: 5,
+          strokeColors: '#fff',
+          strokeWidth: 2
         },
         dataLabels: {
           enabled: false
@@ -93,8 +82,12 @@ class ComparisonChart extends Component<Props, State> {
       },
       series: [
         {
-          name: "Net Change",
-          data: [2,-3,5,1,-1,0,-2,4,1,-2]
+          name: "Users Gained",
+          data: [2,5,1,0,4,1,5,7,0,1]
+        },
+        {
+          name: "Users Lost",
+          data: [3,0,1,2,0,2,0,3,0,1]
         }
       ]
     };
@@ -108,8 +101,8 @@ class ComparisonChart extends Component<Props, State> {
             <Chart
               options={this.state.options}
               series={this.state.series}
-              type="bar"
-              width="400px"
+              type="line"
+              width="100%"
             />
           </div>
         </div>
