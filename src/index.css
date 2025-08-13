@@ -23,7 +23,7 @@ a:hover {
 body {
   margin: 0px auto;
   max-width: 100%;
-  background: linear-gradient(rgba(1, 0, 18, 0.91), rgba(6, 0, 25, 0.932)), url('/bg-img.jpg') no-repeat center center;
+  background: linear-gradient(rgba(1, 0, 18, 0.673), rgba(6, 0, 25, 0.932)), url('/abstract-bg.jpg') no-repeat center center;
   min-height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;

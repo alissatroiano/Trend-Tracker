@@ -2,9 +2,7 @@
 
 .app-container {
   margin: 0px auto;
-  
 }
-
 
 .img-wrapper {
   max-width: 100%;
@@ -23,7 +21,6 @@
 }
 
 .logo:hover {
-
   filter: drop-shadow(0 0 2em #3d1ca74e);
 }
 .logo.react:hover {
@@ -57,30 +54,30 @@ tspan {
 }
 
 .chart-row {
-  margin: 20px;
-   background: rgba(255, 255, 255, 0.085);
+  background: rgba(255, 255, 255, 0.085);
   box-shadow: 0 8px 32px 0 rgba(66, 11, 138, 0.364);
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(4px); /* For Safari compatibility */
   border-radius: 10px;
   border: none;
-  /* margin-left:30px;
-  margin-right:30px; */
+  max-width: 100%;
+  height: auto;
+  width: fit-content;
 }
 
 @media (min-width: 768px) {
   .chart-row {
     min-height: 400px;
   }
-  
+
   .flex-row {
     align-items: stretch;
   }
-  
+
   .card-col {
     display: flex;
   }
-  
+
   .card {
     height: 100%;
     display: flex;
@@ -110,7 +107,7 @@ tspan {
 
 .app-title {
   font-weight: 400;
-  color: #ff74f3d9;
+  color: #b5ebff;
 }
 
 .card {
@@ -123,7 +120,7 @@ tspan {
     display: flex;
     justify-content: center;
   }
-  
+
   .card {
     padding: 0px 10px;
   }
@@ -134,7 +131,7 @@ tspan {
     height: 8em;
   }
   .chart-row {
-  margin: 30px;
+    margin: 0 auto;
     -webkitb-ackdrop-filter: blur(4px); /* For Safari compatibility */
   }
 }
