@@ -13,7 +13,7 @@
 }
 
 .logo {
-  height: 6em;
+  height: 10em;
   margin-top: 20px;
   /* margin-left: 20px; */
   will-change: filter;
@@ -121,10 +121,12 @@ tspan {
   font-weight: 400;
   font-size: 1.254rem;
   letter-spacing: 1px;
+  font-size: 1.2rem;
 }
 
 .app-title {
   font-weight: 400;
+  font-size: 1.52rem;
   animation: fadeIn 3s ease-in-out forwards; /* Apply the animation */
 }
 
@@ -156,6 +158,9 @@ tspan {
     max-width: 50%;
   }
   .logo {
-    height: 8em;
+    height: 15em;
+  }
+  .app-title {
+    font-size: 2.5rem;
   }
 }

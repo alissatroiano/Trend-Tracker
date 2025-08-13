@@ -1,5 +1,5 @@
 import React from 'react'
-import appLogo from '/logo-dark.png'
+import appLogo from '/yellow.png'
 import './App.css'
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
