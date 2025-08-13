@@ -18,6 +18,8 @@
   /* margin-left: 20px; */
   will-change: filter;
   transition: filter 300ms;
+    animation: fadeIn 5s ease-in-out forwards; /* Apply the animation */
+
 }
 
 .logo:hover {
@@ -63,7 +65,23 @@ tspan {
   max-width: 100%;
   height: auto;
   width: fit-content;
+  animation: float 6s ease-in-out infinite;
 }
+
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(10px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
+
 
 @media (min-width: 768px) {
   .chart-row {
@@ -93,7 +111,7 @@ tspan {
 
 .app-title,
 .chart-title {
-  color: #fafafa;
+  color: #fafafada;
   font-family: "Futura-PT", sans-serif;
   text-transform: uppercase;
   text-align: center;
@@ -107,8 +125,18 @@ tspan {
 
 .app-title {
   font-weight: 400;
-  color: #b5ebff;
+  animation: fadeIn 3s ease-in-out forwards; /* Apply the animation */
 }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; /* Start with fully transparent text */
+  }
+  100% {
+    opacity: 1; /* End with fully opaque text */
+  }
+}
+
 
 .card {
   margin: 0 auto;
@@ -129,9 +157,5 @@ tspan {
   }
   .logo {
     height: 8em;
-  }
-  .chart-row {
-    margin: 0 auto;
-    -webkitb-ackdrop-filter: blur(4px); /* For Safari compatibility */
   }
 }
