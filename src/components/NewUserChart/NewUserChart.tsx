@@ -43,10 +43,11 @@ class NewUserChart extends Component<Props, State> {
           labels: {
             show: true,
             hideOverlappingLabels: false,
+            rotate: -45,
             style: {
-              colors: '#b885ddff',
-              fontSize: '9.5px',
-              fontWeight: 'meduim'
+              colors: '#ffcf21ff',
+              fontSize: '9.58px',
+              fontWeight: 'medium'
             }
           }
         },

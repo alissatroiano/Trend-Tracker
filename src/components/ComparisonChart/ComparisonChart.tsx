@@ -55,8 +55,8 @@ class ComparisonChart extends Component<Props, State> {
           labels: {
           rotate: -45,
           style: {
-            colors: '#b885ddff',
-            fontSize: '9.5px',
+            colors: '#ffcf21ff',
+            fontSize: '9.58px',
             fontWeight: 'medium'
           }
         }
