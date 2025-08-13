@@ -18,6 +18,9 @@ function App() {
               <img src={appLogo} className="logo" alt="trend-tracker" />
             </div>
           </Col>
+          <Col>
+          <h1 className="app-title">User Metrics</h1>
+          </Col>
         </Row>
         <Row className='d-flex flex-row justify-content-center chart-row'>
           <Col className='col-12 col-sm-6 flex-col card-col'>

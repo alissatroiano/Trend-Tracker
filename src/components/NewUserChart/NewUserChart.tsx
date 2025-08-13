@@ -24,7 +24,7 @@ class NewUserChart extends Component<Props, State> {
         },
         colors: ['#00E396'],
         grid: {
-          borderColor: '#e7e7e79d',
+          borderColor: '#e7e7e794',
           strokeDashArray: 3
         },
         plotOptions: {
@@ -44,9 +44,9 @@ class NewUserChart extends Component<Props, State> {
             show: true,
             hideOverlappingLabels: false,
             style: {
-              colors: '#85d2ddff',
-              fontSize: '10px',
-              fontWeight: 'bold'
+              colors: '#b885ddff',
+              fontSize: '9.5px',
+              fontWeight: 'meduim'
             }
           }
         },
@@ -54,6 +54,7 @@ class NewUserChart extends Component<Props, State> {
           labels: {
             style: {
               colors: '#ffcf21ff',
+              fontSize: '9.5px',
               fontWeight: 'bold'
             }
           }
@@ -98,6 +99,8 @@ class NewUserChart extends Component<Props, State> {
               series={this.state.series}
               type="bar"
               width="400px"
+                            height={"auto"}
+              maxWidth="100%"
             />
           </div>
         </div>

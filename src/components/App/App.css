@@ -2,7 +2,11 @@
 
 .app-container {
   margin: 0px auto;
-  background: linear-gradient(rgba(13, 0, 49, 0.867), rgba(20, 2, 57, 0.904)), url('../../assets/bg-img.jpg') no-repeat center center;
+  background: linear-gradient(rgba(5, 0, 17, 0.867), rgba(8, 1, 24, 0.904)), url('../../assets/bg-img.jpg') no-repeat center center;
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 
@@ -15,14 +19,15 @@
 }
 
 .logo {
-  height: 5em;
-
+  height: 6em;
   margin-top: 20px;
+  /* margin-left: 20px; */
   will-change: filter;
   transition: filter 300ms;
 }
 
 .logo:hover {
+
   filter: drop-shadow(0 0 2em #3d1ca74e);
 }
 .logo.react:hover {
@@ -60,17 +65,49 @@ tspan {
   margin: 0 auto;
 }
 
+@media (min-width: 768px) {
+  .chart-row {
+    min-height: 400px;
+  }
+  
+  .flex-row {
+    align-items: stretch;
+  }
+  
+  .card-col {
+    display: flex;
+  }
+  
+  .card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .card-col {
   display: flex;
   justify-content: center;
   padding: 10px;
 }
 
+.app-title,
 .chart-title {
   color: #fafafa;
   font-family: "Futura-PT", sans-serif;
   text-transform: uppercase;
   text-align: center;
+}
+
+.chart-title {
+  font-weight: 400;
+  font-size: 1.254rem;
+  letter-spacing: 1px;
+}
+
+.app-title {
+  font-weight: 400;
+  color: #ff74f3d9;
 }
 
 .card {
@@ -83,14 +120,14 @@ tspan {
     display: flex;
     justify-content: center;
   }
+  
   .card {
-    padding: 20px;
+    padding: 0px 10px;
   }
   .card-col {
-    padding: 15px;
     max-width: 50%;
   }
   .logo {
-    height: 20em;
+    height: 8em;
   }
 }

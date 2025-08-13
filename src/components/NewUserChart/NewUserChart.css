@@ -1,10 +1,13 @@
+@import url("https://use.typekit.net/okm0fpl.css");
+
+
 .apexcharts-text tspan,
 text.apexcharts-text.apexcharts-xaxis-label,
 .apexcharts-xaxis-label,
-.apexcharts-yaxis-label,
 .apexcharts-text {
-  font-family: "Rajdhani", sans-serif;
-  font-weight: 500 !important;
+  font-family: 'Futura-PT', sans-serif !important;
+  rotate: -45; /* tilt the labels */
+
 }
 
 .mixed-chart {

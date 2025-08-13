@@ -6,6 +6,7 @@ text.apexcharts-text.apexcharts-xaxis-label,
 .apexcharts-yaxis-label,
 .apexcharts-text {
   font-family: 'Futura-PT', sans-serif !important;
+  rotate: -45; /* tilt the labels */
 }
 
 .mixed-chart {
@@ -20,6 +21,12 @@ text.apexcharts-text.apexcharts-xaxis-label,
 .app {
   font-family: 'Futura-PT', sans-serif;
   text-align: center;
+}
+
+span.apexcharts-legend-text {
+  font-family: 'Futura-PT', sans-serif !important;
+  color: #fafafa !important;
+  padding-top: 10px;
 }
 
 @media (min-width: 768px) {
