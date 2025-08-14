@@ -1,29 +1,25 @@
 import React from 'react'
-import appLogo from '/yellow.png'
 import './App.css'
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import NewUserChart from '../NewUserChart/NewUserChart';
 import ComparisonChart from '../ComparisonChart/ComparisonChart.tsx';
+import Navigation from '../Navigation/Navigation';
 
 function App() {
 
   return (
     <>
+      <Navigation />
       <Container className="container app-container">
         <Row>
           <Col>
-            <div className="img-wrapper">
-              <img src={appLogo} className="logo" alt="trend-tracker" />
-            </div>
-          </Col>
-          <Col>
-          <h1 className="app-title">User Metrics</h1>
+            <h1 className="app-title">User Metrics</h1>
           </Col>
         </Row>
         <Row className='d-flex flex-row justify-content-center chart-row' id='chartRow'>
-          <Col className='col-12 col-sm-6 flex-col card-col'>
+          <Col className='col-12 col-sm-6 flex-col card-col' id='new-users'>
             <div className='card'>
               <div className='card-header'>
                  <h2 className='display-3 chart-title'>New Users</h2>
@@ -33,7 +29,7 @@ function App() {
               </div>
             </div>
           </Col>
-          <Col className='col-12 col-sm-6 flex-col card-col'>
+          <Col className='col-12 col-sm-6 flex-col card-col' id='users-gained-lost'>
             <div className='card'>
               <div className='card-header'>
                 <h2 className='display-3 chart-title'> Users Gained & Lost</h2>
