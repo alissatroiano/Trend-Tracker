@@ -1,0 +1,80 @@
+.nav-logo {
+  height: 5rem;
+  width: 5rem;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 1rem;
+  align-items: center;
+}
+
+.hamburger-menu {
+  display: none;
+}
+
+
+/* Show hamburger on small screens (below 640px) */
+@media (max-width: 639px) {
+  .nav-list {
+    display: none;
+  }
+  
+  .hamburger-menu {
+    display: flex;
+    align-items: end;
+    text-align: right;
+    justify-content: end;
+    padding-bottom: 20px;
+    margin: 20px;
+  }
+}
+
+/* Hide hamburger on tablets and up (640px and above) */
+@media (min-width: 640px) {
+  .nav-list {
+    display: flex;
+  }
+  
+  .hamburger-menu {
+    display: none;
+  }
+  
+  .mobile-dropdown {
+    display: none;
+  }
+}
+
+.mobile-dropdown {
+  display: block;
+}
+
+.mobile-dropdown ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hamburger-icon {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 8px;
+}
+
+.hamburger-icon span {
+  width: 20px;
+  height: 2px;
+  background-color: #d1d5db;
+  transition: all 0.3s ease;
+}
+
+.hamburger-icon:hover span {
+  background-color: #ffffff;
+}
