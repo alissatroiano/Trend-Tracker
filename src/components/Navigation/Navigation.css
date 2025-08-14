@@ -18,12 +18,9 @@ li.logo-img {
   align-items: start;
   justify-content: start;
   justify-content: start;
-  margin-left: 20px;
-}
-
-
-img.nav-logo {
-  margin: 10px 10px;
+  margin-top: 10px;
+  margin-left: 25px;
+  margin-right: 30px;
 }
 
 a,

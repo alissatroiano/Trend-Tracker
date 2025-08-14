@@ -2,6 +2,7 @@
 
 .app-container {
   margin: 0px auto;
+  padding-top: 10px;
 }
 
 .img-wrapper {
@@ -162,4 +163,8 @@ tspan {
   .app-title {
     font-size: 2.5rem;
   }
+  .app-container {
+  margin: 0px auto;
+  padding-top: 20px;
+}
 }
