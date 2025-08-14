@@ -1,4 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap");
+/*  Import Adobe Fonts */
+@import url("https://use.typekit.net/okm0fpl.css");
+/*  Import Playfair Display */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,600&display=swap');
 
 .app-container {
   margin: 0px auto;
@@ -16,11 +19,9 @@
 .logo {
   height: 10em;
   margin-top: 20px;
-  /* margin-left: 20px; */
   will-change: filter;
   transition: filter 300ms;
-    animation: fadeIn 5s ease-in-out forwards; /* Apply the animation */
-
+  animation: fadeIn 5s ease-in-out forwards; /* Apply the animation */
 }
 
 .logo:hover {
@@ -42,12 +43,6 @@
 /* ------ Charts */
 tspan {
   color: #fafafa;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
 }
 
 .flex-row {
@@ -127,7 +122,7 @@ tspan {
 .app-title {
   font-weight: 400;
   font-size: 1.52rem;
-  animation: fadeIn 3s ease-in-out forwards; /* Apply the animation */
+  animation: fadeIn 3s ease-in-out forwards;
 }
 
 @keyframes fadeIn {
@@ -138,7 +133,6 @@ tspan {
     opacity: 1; /* End with fully opaque text */
   }
 }
-
 
 .card {
   margin: 0 auto;
