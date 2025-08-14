@@ -24,18 +24,18 @@ const Navigation: React.FC = () => {
           </div>
           
           <ul className='nav-list'>
-            <li>
-              <a href="#" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors">
+            <li className='logo-img'>
+              <a href="#" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors nav-link">
                 <img src={appLogo} className="nav-logo" alt="trend-tracker" />
               </a>
             </li>
-            <li>
-              <a href="#" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors">
+            <li className='nav-item'>
+              <a href="#" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors nav-link">
                 New Users
               </a>
             </li>
-            <li>
-              <a href="#" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors">
+            <li className='nav-item'>
+              <a href="#" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors  nav-link">
                 Users Gained & Lost
               </a>
             </li>
