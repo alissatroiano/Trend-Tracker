@@ -24,7 +24,7 @@ img.nav-logo {
   margin: 10px 10px;
 }
 
-
+a,
 .nav-link {
   font-family: 'Rajdhani', sans-serif;
   font-weight: 500;
@@ -33,6 +33,11 @@ img.nav-logo {
   transition: color 0.3s ease;
   text-transform: uppercase;
   text-align: right;
+}
+
+a.nav-link:hover {
+  color: #3c3ee2e2;
+  text-decoration: line-through;
 }
 
 .hamburger-menu {
@@ -73,12 +78,36 @@ img.nav-logo {
 
 .mobile-dropdown {
   display: block;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 8px;
+  margin: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
 }
 
 .mobile-dropdown ul {
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 12px;
+}
+
+.mobile-dropdown li {
+  margin: 4px 0;
+}
+
+.mobile-dropdown a {
+  color: #d1d5db;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  display: block;
+}
+
+.mobile-dropdown a:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
 }
 
 .hamburger-icon {

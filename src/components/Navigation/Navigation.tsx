@@ -1,9 +1,20 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import appLogo from '/yellow.png';
 import './Navigation.css';
 
 const Navigation: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
+  
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 640) {
+        setIsOpen(false);
+      }
+    };
+    
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
   
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-black bg-opacity-20 backdrop-blur border-b border-purple-500 border-opacity-30">
