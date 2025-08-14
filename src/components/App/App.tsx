@@ -19,7 +19,7 @@ function App() {
           </Col>
         </Row>
         <Row className='d-flex flex-row justify-content-center chart-row' id='chartRow'>
-          <Col className='col-12 col-sm-6 flex-col card-col'>
+          <Col className='col-12 col-sm-6 flex-col card-col' id='new-users'>
             <div className='card'>
               <div className='card-header'>
                  <h2 className='display-3 chart-title'>New Users</h2>
@@ -29,7 +29,7 @@ function App() {
               </div>
             </div>
           </Col>
-          <Col className='col-12 col-sm-6 flex-col card-col'>
+          <Col className='col-12 col-sm-6 flex-col card-col' id='users-gained-lost'>
             <div className='card'>
               <div className='card-header'>
                 <h2 className='display-3 chart-title'> Users Gained & Lost</h2>
