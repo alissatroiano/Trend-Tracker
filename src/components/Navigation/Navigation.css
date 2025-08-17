@@ -133,6 +133,31 @@ a.nav-link:hover {
   background-color: #ffffff;
 }
 
+button#darkModeToggle {
+  background: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    padding: 8px 12px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  display: block;
+}
+
+li.dark-mode-toggle {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin: 0px auto;
+    padding: 8px 12px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  display: block;
+}
+
 /* tablets and up */
 @media (min-width: 640px) {
 li.nav-item {
@@ -178,5 +203,14 @@ nav {
   backdrop-filter: blur(12px) !important;
   -webkit-backdrop-filter: blur(12px) !important;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4) !important;
+}
+
+li.dark-mode-toggle {
+  display: flex;
+  margin-left: 80px;
+  align-items: right;
+  text-align: right;
+  justify-content: right;
+
 }
 }
