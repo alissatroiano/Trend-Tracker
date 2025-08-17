@@ -101,9 +101,7 @@
 }
 
 .app-title,
-.chart-title,
-tspan
- {
+.chart-title {
   font-family: "Futura-PT", sans-serif;
   text-transform: uppercase;
   text-align: center;
@@ -111,8 +109,7 @@ tspan
 }
 
 body.dark .app-title,
-body.dark .chart-title,
-body.dark tspan {
+body.dark .chart-title {
   color: #fafafa;
 }
 

@@ -23,17 +23,19 @@ text.apexcharts-text.apexcharts-xaxis-label,
   text-align: center;
 }
 
-span.apexcharts-legend-text {
+body.light span.apexcharts-legend-text {
   font-family: 'Futura-PT', sans-serif !important;
   color: #1a1a1a !important;
   letter-spacing: .5px;
 }
 
-/* Dark mode override */
 body.dark span.apexcharts-legend-text {
-  color: #fafafa !important;
+  font-family: 'Futura-PT', sans-serif !important;
+  color: #f4dc08 !important;
+  letter-spacing: .5px;
 }
 
+/* Dark mode override */
 @media (min-width: 768px) {
   .mixed-chart .apexcharts-canvas {
     width: 400px !important;
