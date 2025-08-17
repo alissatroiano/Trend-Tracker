@@ -25,8 +25,13 @@ text.apexcharts-text.apexcharts-xaxis-label,
 
 span.apexcharts-legend-text {
   font-family: 'Futura-PT', sans-serif !important;
-  color: #fafafa !important;
+  color: #1a1a1a !important;
   letter-spacing: .5px;
+}
+
+/* Dark mode override */
+body.dark span.apexcharts-legend-text {
+  color: #fafafa !important;
 }
 
 @media (min-width: 768px) {
