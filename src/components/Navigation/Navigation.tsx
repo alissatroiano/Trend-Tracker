@@ -56,8 +56,7 @@ const Navigation: React.FC<NavProps> = ({ darkMode, setDarkMode }) => {
             <li className="mr-4 dark-mode-toggle">
               <button id='darkModeToggle'
                 onClick={() => setDarkMode(!darkMode)}
-                className="px-3 py-2 rounded-md text-sm font-medium transition-colors 
-                           bg-gray-800 text-gray-200 hover:bg-gray-700"
+                className="dark-mode-button"
               >
                 {darkMode ? "☀️" : "🌙"}
               </button>
@@ -80,7 +79,7 @@ const Navigation: React.FC<NavProps> = ({ darkMode, setDarkMode }) => {
                   onClick={() => setDarkMode(!darkMode)}
                   className="w-full text-left block px-3 py-2 rounded-md text-base font-medium bg-gray-800 text-gray-200 hover:bg-gray-700"
                 >
-                  {darkMode ? "☀️ Light" : "🌙 Dark"}
+                  {darkMode ? "☀️" : "🌙"}
                 </button>
               </li>
             </ul>

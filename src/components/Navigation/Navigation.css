@@ -78,19 +78,24 @@ a.nav-link:hover {
 }
 
 .mobile-dropdown {
-  display: block;
+  display: flex;
   background: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   border-radius: 8px;
   margin: 8px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  height: fit-content;
+  align-items: end;
+  justify-content: end;
 }
 
 .mobile-dropdown ul {
   list-style: none;
   margin: 0;
   padding: 12px;
+  height: auto;
+  min-height: fit-content;
 }
 
 .mobile-dropdown li {
@@ -137,25 +142,19 @@ button#darkModeToggle {
   background: none;
   background-color: transparent;
   border: none;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-    padding: 8px 12px;
   border-radius: 6px;
   transition: all 0.3s ease;
   display: block;
+  
 }
 
-li.dark-mode-toggle {
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  margin: 0px auto;
-    padding: 8px 12px;
-  border-radius: 6px;
-  transition: all 0.3s ease;
-  display: block;
+button.w-full.text-left.block.px-3.py-2.rounded-md.text-base.font-medium.bg-gray-800.text-gray-200.hover\:bg-gray-700 {
+  display: flex;
+  margin-left: 80px;
+  align-items: right;
+  text-align: right;
+  justify-content: right;
+  float: inline-end;
 }
 
 /* tablets and up */
@@ -211,6 +210,14 @@ li.dark-mode-toggle {
   align-items: right;
   text-align: right;
   justify-content: right;
-
+}
+button#darkModeToggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 12px;
+    margin-bottom: 10px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
 }
 }
