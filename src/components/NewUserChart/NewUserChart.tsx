@@ -4,6 +4,7 @@ import './NewUserChart.css';
 
 interface Props {
   darkMode: boolean;
+  lightMode: boolean;
 }
 
 interface State {
@@ -40,9 +41,9 @@ class NewUserChart extends Component<Props, State> {
 getOptions(darkMode: boolean, data: number[]) {
   return {
     chart: { id: "basic-bar", background: 'transparent', toolbar: { show: false } },
-    colors: [darkMode ? '#ffcf21ff' : '#00E396'], // bars are yellow in dark mode
+    colors: [darkMode ? '#13af69ff' : '#13af69ff'],
     grid: {
-      borderColor: darkMode ? '#e7e7e794' : '#cccccc',
+      borderColor: darkMode ? '#e7e7e794' : '#8e8e8eff',
       strokeDashArray: 3,
     },
     plotOptions: { bar: { borderRadius: 4, columnWidth: "60%" } },
@@ -53,11 +54,12 @@ getOptions(darkMode: boolean, data: number[]) {
         return date.toLocaleDateString("en-US", { month: "2-digit", day: "2-digit" });
       }),
       labels: {
-        rotate: -45,
         style: {
-          colors: darkMode ? '#ffcf21ff' : '#333', // axis labels yellow in dark mode
+          colors: darkMode ? '#c085ffff' : '#0a0a0a', // axis labels yellow in dark mode
           fontSize: "9.58px",
           fontWeight: "medium",
+          transform:'rotate(-45)',
+
         },
       },
     },

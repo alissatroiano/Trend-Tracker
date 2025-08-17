@@ -28,18 +28,18 @@ function App() {
       <Container className="container app-container">
         <Row>
           <Col>
-           <h1 className="app-title text-gray-900 dark:text-gray-100">
-User Metrics</h1>
+            <h1 className="app-title text-gray-900 dark:text-gray-100">
+              User Metrics</h1>
           </Col>
         </Row>
         <Row className='d-flex flex-row justify-content-center chart-row' id='chartRow'>
           <Col className='col-12 col-sm-6 flex-col card-col' id='new-users'>
             <div className='card'>
               <div className='card-header'>
-                 <h2 className='display-3 chart-title'>New Users</h2>
+                <h2 className='display-3 chart-title'>New Users</h2>
               </div>
               <div className='card-body'>
-                <NewUserChart />
+               <NewUserChart darkMode={darkMode} lightMode={!darkMode} />
               </div>
             </div>
           </Col>
@@ -49,7 +49,7 @@ User Metrics</h1>
                 <h2 className='display-3 chart-title'>Users Gained & Lost</h2>
               </div>
               <div className='card-body'>
-                <ComparisonChart />
+            <ComparisonChart darkMode={darkMode} />
               </div>
             </div>
           </Col>

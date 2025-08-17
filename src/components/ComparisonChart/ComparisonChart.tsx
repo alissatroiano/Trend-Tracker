@@ -45,7 +45,7 @@ class ComparisonChart extends Component<Props, State> {
         background: 'transparent',
         toolbar: { show: false }
       },
-      colors: ['#00E396', '#FF4560'], // stays consistent
+      colors: ['#13af69ff', '#FF4560'], // stays consistent
       xaxis: {
         categories: Array.from({ length: data.length }, (_, i) => {
           const date = new Date();
@@ -55,7 +55,7 @@ class ComparisonChart extends Component<Props, State> {
         labels: {
           rotate: -45,
           style: {
-            colors: darkMode ? '#ffcf21ff' : '#333',
+          colors: darkMode ? '#c085ffff' : '#0a0a0a', // axis labels yellow in dark mode
             fontSize: '9.58px'
           }
         }
@@ -63,13 +63,13 @@ class ComparisonChart extends Component<Props, State> {
       yaxis: {
         labels: {
           style: {
-            colors: darkMode ? '#ffcf21ff' : '#333'
+          colors: darkMode ? '#ffcf21ff' : '#0a0a0a', 
           }
         },
         min: 0
       },
       grid: {
-        borderColor: darkMode ? '#e7e7e794' : '#cccccc'
+        borderColor: darkMode ? '#e7e7e794' : '#87858599'
       },
       tooltip: {
         theme: darkMode ? 'dark' : 'light',
