@@ -41,10 +41,6 @@
 }
 
 /* ------ Charts */
-tspan {
-  color: #fafafa;
-}
-
 .flex-row {
   margin: 0 auto;
   justify-content: center;
@@ -106,10 +102,15 @@ tspan {
 
 .app-title,
 .chart-title {
-  color: #fafafada;
   font-family: "Futura-PT", sans-serif;
   text-transform: uppercase;
   text-align: center;
+  color: #1a1a1a;
+}
+
+body.dark .app-title,
+body.dark .chart-title {
+  color: #fafafa;
 }
 
 .chart-title {

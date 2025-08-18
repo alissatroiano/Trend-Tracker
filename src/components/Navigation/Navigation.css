@@ -1,8 +1,13 @@
+/*  Import Adobe Fonts */
+@import url("https://use.typekit.net/okm0fpl.css");
+/*  Import Playfair Display */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,600&display=swap');
+
 
 
 .nav-logo {
-  height: 5rem;
-  width: 5rem;
+  height: 8em;
+  width: 8em;
 }
 
 .nav-list {
@@ -11,6 +16,9 @@
   margin: 0 auto;
   padding: 0;
   align-items: center;
+  font-family: "Futura-PT", sans-serif;
+  text-transform: uppercase;
+  font-size: .81rem;
 }
 
 li.logo-img {
@@ -23,18 +31,21 @@ li.logo-img {
   margin-right: 30px;
 }
 
-a,
-.nav-link {
-  font-family: 'Rajdhani', sans-serif;
-  font-weight: 500;
-  color: #b5cceed3;
-  text-decoration: none;
-  transition: color 0.3s ease;
-  text-transform: uppercase;
-  text-align: right;
+/* Light mode links */
+body.light a.nav-link {
+  color: #1f2937; /* dark gray */
+}
+body.light a.nav-link:hover {
+  color: #3c3ee2e2;
+  text-decoration: line-through;
 }
 
-a.nav-link:hover {
+/* Dark mode links */
+body.dark a.nav-link {
+  color: #ffffff;
+}; /* yellow */
+
+body.dark a.nav-link:hover {
   color: #3c3ee2e2;
   text-decoration: line-through;
 }
@@ -77,38 +88,59 @@ a.nav-link:hover {
   }
 }
 
-.mobile-dropdown {
-  display: block;
+body.dark .mobile-dropdown {
+  display: flex;
   background: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   border-radius: 8px;
   margin: 8px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  height: fit-content;
+  align-items: end;
+  justify-content: end;
+  font-family: "Futura-PT", sans-serif;
+  text-transform: uppercase;
+}
+
+body.light .mobile-dropdown {
+  background: rgba(255, 255, 255, 0.125);
+  padding-bottom: 30px;
 }
 
 .mobile-dropdown ul {
+  font-family: "Futura-PT", sans-serif;
   list-style: none;
   margin: 0;
   padding: 12px;
+  height: auto;
+  min-height: fit-content;
 }
 
 .mobile-dropdown li {
   margin: 4px 0;
 }
 
-.mobile-dropdown a {
-  color: #d1d5db;
-  text-decoration: none;
-  padding: 8px 12px;
-  border-radius: 6px;
-  transition: all 0.3s ease;
-  display: block;
+body.light .mobile-dropdown a {
+  color: #1f2937;
+}
+body.dark .mobile-dropdown a {
+  color: #a15fece2;
 }
 
-.mobile-dropdown a:hover {
+body.dark .mobile-dropdown a:hover {
   background: rgba(255, 255, 255, 0.1);
   color: #ffffff;
+}
+
+body.light .mobile-dropdown a {
+  font-family: "Futura-PT", sans-serif;
+  align-items: end;
+  text-align: right;
+  justify-content: end;
+  display: flex;
+  text-transform: uppercase;
+  margin: 5px auto;
 }
 
 .hamburger-icon {
@@ -121,7 +153,7 @@ a.nav-link:hover {
   padding: 8px;
 }
 
-.hamburger-icon span {
+body.dark .hamburger-icon span {
   width: 22px;
   height: 3.5px;
   background-color: #b5cceed3;
@@ -129,8 +161,39 @@ a.nav-link:hover {
   box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.3);
 }
 
-.hamburger-icon:hover span {
+body.dark .hamburger-icon:hover span {
+  background-color: #0f033ed3;
+}
+
+body.light .hamburger-icon span {
+  width: 22px;
+  height: 3.5px;
+  background-color: #0f033ed3;
+  transition: all 0.3s ease;
+  box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+body.dark .hamburger-icon:hover span {
   background-color: #ffffff;
+}
+
+button#darkModeToggle {
+  background: none;
+  background-color: transparent;
+  border: none;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  display: block;
+  
+}
+
+button.w-full.text-left.block.px-3.py-2.rounded-md.text-base.font-medium.bg-gray-800.text-gray-200.hover\:bg-gray-700 {
+  display: flex;
+  margin-left: 80px;
+  align-items: right;
+  text-align: right;
+  justify-content: right;
+  float: inline-end;
 }
 
 /* tablets and up */
@@ -165,18 +228,33 @@ li.nav-item > a.nav-link {
   .nav-list {
     display: flex;
   }
-  
-  .mobile-dropdown {
-    display: none;
-  }
+
   html {
   scroll-behavior: smooth;
 }
 
 nav {
-  background: rgba(0, 0, 0, 0.3) !important;
-  backdrop-filter: blur(12px) !important;
+  background: transparent;
+  backdrop-filter: blur(8px) !important;
   -webkit-backdrop-filter: blur(12px) !important;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4) !important;
+}
+
+li.dark-mode-toggle {
+  display: flex;
+  margin-left: 80px;
+  align-items: right;
+  text-align: right;
+  justify-content: right;
+}
+
+button#darkModeToggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 12px;
+    margin-bottom: 10px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
 }
 }
