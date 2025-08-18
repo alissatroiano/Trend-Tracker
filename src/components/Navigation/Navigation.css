@@ -153,7 +153,7 @@ body.light .mobile-dropdown a {
   padding: 8px;
 }
 
-.hamburger-icon span {
+body.dark .hamburger-icon span {
   width: 22px;
   height: 3.5px;
   background-color: #b5cceed3;
@@ -161,7 +161,19 @@ body.light .mobile-dropdown a {
   box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.3);
 }
 
-.hamburger-icon:hover span {
+body.dark .hamburger-icon:hover span {
+  background-color: #0f033ed3;
+}
+
+body.light .hamburger-icon span {
+  width: 22px;
+  height: 3.5px;
+  background-color: #0f033ed3;
+  transition: all 0.3s ease;
+  box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+body.dark .hamburger-icon:hover span {
   background-color: #ffffff;
 }
 
@@ -235,6 +247,7 @@ li.dark-mode-toggle {
   text-align: right;
   justify-content: right;
 }
+
 button#darkModeToggle {
   display: flex;
   align-items: center;
