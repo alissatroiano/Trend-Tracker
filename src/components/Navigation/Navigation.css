@@ -178,6 +178,8 @@ body.dark .hamburger-icon:hover span {
   background-color: #ffffff;
 }
 
+
+
 button#darkModeToggle {
   background: none;
   background-color: transparent;
@@ -188,14 +190,6 @@ button#darkModeToggle {
   
 }
 
-button.w-full.text-left.block.px-3.py-2.rounded-md.text-base.font-medium.bg-gray-800.text-gray-200.hover\:bg-gray-700 {
-  display: flex;
-  margin-left: 80px;
-  align-items: right;
-  text-align: right;
-  justify-content: right;
-  float: inline-end;
-}
 
 /* tablets and up */
 @media (min-width: 640px) {
@@ -217,6 +211,13 @@ li.nav-item > a.nav-link {
   margin: 10px 30px  ;
   text-align: right;
   padding-left: 20px;
+}
+button.dark-mode-button {
+  max-width: 85px;
+  height: auto;
+  position: relative;
+  float: inline-end;
+  margin-left: 30px;
 }
 }
 
