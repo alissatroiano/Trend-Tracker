@@ -67,14 +67,19 @@ const Navigation: React.FC<NavProps> = ({ darkMode, setDarkMode }) => {
               </a>
             </li>
             {/* Dark mode toggle button */}
-            <li className="mr-4 dark-mode-toggle">
-              <button id='darkModeToggle'
-                onClick={() => setDarkMode(!darkMode)}
-                className="dark-mode-button"
-              >
-                {darkMode ? "☀️" : "🌙"}
-              </button>
-            </li>
+          <li className="mr-4 dark-mode-toggle">
+  <button
+    id="darkModeToggle"
+    onClick={() => setDarkMode(!darkMode)}
+    className="dark-mode-button"
+  >
+    <img
+      src={darkMode ? "/dark-mode.png" : "/light-mode.png"}
+      alt="toggle dark mode"
+      className="h-6 w-6"
+    />
+  </button>
+</li>
           </ul>
         </div>
 

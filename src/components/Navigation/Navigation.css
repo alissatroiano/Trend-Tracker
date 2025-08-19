@@ -173,6 +173,7 @@ body.light .hamburger-icon span {
   box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.3);
 }
 
+
 body.dark .hamburger-icon:hover span {
   background-color: #ffffff;
 }
