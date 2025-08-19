@@ -105,7 +105,7 @@ body.dark .mobile-dropdown {
 
 body.light .mobile-dropdown {
   background: rgba(255, 255, 255, 0.125);
-  padding-bottom: 30px;
+  padding-bottom: 50px;
 }
 
 .mobile-dropdown ul {
@@ -190,6 +190,19 @@ button#darkModeToggle {
   
 }
 
+.mobile-toggle {
+  max-width: 30px;
+  height: auto;
+}
+
+button.toggle-mobile {
+  text-align: right;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  float: inline-end;
+  margin: 10px auto;
+}
 
 /* tablets and up */
 @media (min-width: 640px) {

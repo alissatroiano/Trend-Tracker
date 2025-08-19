@@ -95,9 +95,11 @@ const Navigation: React.FC<NavProps> = ({ darkMode, setDarkMode }) => {
               <li>
                 <button
                   onClick={() => setDarkMode(!darkMode)}
-                  className="w-full text-left block px-3 py-2 rounded-md text-base font-medium bg-gray-800 text-gray-200 hover:bg-gray-700"
+                  className="text-left block px-3 py-2 rounded-md text-base font-medium bg-gray-800 text-gray-200 hover:bg-gray-700 toggle-mobile"
                 >
-                  {darkMode ? "☀️" : "🌙"}
+                   <img className='img img-fluid mobile-toggle'
+      src={darkMode ? "/light-mode.png" : "/dark-mode.png"}
+      alt="toggle dark mode"></img>
                 </button>
               </li>
             </ul>
