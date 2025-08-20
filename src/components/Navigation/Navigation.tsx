@@ -10,11 +10,25 @@ type NavProps = {
 
 const Navigation: React.FC<NavProps> = ({ darkMode, setDarkMode }) => {
   const [isCollapsed, setIsCollapsed] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
     <>
+      {/* Mobile Menu Button */}
+      <button 
+        className={`mobile-menu-button ${darkMode ? 'dark' : 'light'}`}
+        onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+        aria-label="Toggle mobile menu"
+      >
+        <div className={`hamburger ${isMobileMenuOpen ? 'open' : ''}`}>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </button>
+
       {/* Sidebar */}
-      <div className={`sidebar ${isCollapsed ? 'collapsed' : ''} ${darkMode ? 'dark' : 'light'}`}>
+      <div className={`sidebar ${isCollapsed ? 'collapsed' : ''} ${isMobileMenuOpen ? 'mobile-open' : ''} ${darkMode ? 'dark' : 'light'}`}>
         <div className="sidebar-header">
           <img
             src={darkMode ? appLogoDark : appLogoLight}
@@ -27,19 +41,19 @@ const Navigation: React.FC<NavProps> = ({ darkMode, setDarkMode }) => {
         </div>
 
         <nav className="sidebar-nav">
-          <a href="#new-users" className="nav-item">
+          <a href="#new-users" className="nav-item" onClick={() => setIsMobileMenuOpen(false)}>
             <div className="nav-icon">📊</div>
             {!isCollapsed && <span>New Users</span>}
           </a>
-          <a href="#users-gained-lost" className="nav-item">
+          <a href="#users-gained-lost" className="nav-item" onClick={() => setIsMobileMenuOpen(false)}>
             <div className="nav-icon">📈</div>
             {!isCollapsed && <span>Users Gained & Lost</span>}
           </a>
-          <a href="#analytics" className="nav-item">
+          <a href="#analytics" className="nav-item" onClick={() => setIsMobileMenuOpen(false)}>
             <div className="nav-icon">📋</div>
             {!isCollapsed && <span>Analytics</span>}
           </a>
-          <a href="#settings" className="nav-item">
+          <a href="#settings" className="nav-item" onClick={() => setIsMobileMenuOpen(false)}>
             <div className="nav-icon">⚙️</div>
             {!isCollapsed && <span>Settings</span>}
           </a>
@@ -66,7 +80,10 @@ const Navigation: React.FC<NavProps> = ({ darkMode, setDarkMode }) => {
       </div>
 
       {/* Mobile overlay */}
-      <div className="mobile-overlay" onClick={() => setIsCollapsed(true)}></div>
+      <div 
+        className={`mobile-overlay ${isMobileMenuOpen ? 'active' : ''}`} 
+        onClick={() => setIsMobileMenuOpen(false)}
+      ></div>
     </>
   );
 };
