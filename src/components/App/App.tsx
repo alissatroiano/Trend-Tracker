@@ -5,7 +5,7 @@ import ComparisonChart from '../ComparisonChart/ComparisonChart.tsx';
 import Navigation from '../Navigation/Navigation';
 
 function App() {
-  const [darkMode, setDarkMode] = useState(true);
+  const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
     if (darkMode) {
