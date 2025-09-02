@@ -60,6 +60,22 @@ const Navigation: React.FC<NavProps> = ({ darkMode, setDarkMode }) => {
         </nav>
 
         <div className="sidebar-footer">
+          <div className="profile-section">
+            <div className="profile-avatar">
+              <img 
+                src="https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&dpr=2" 
+                alt="Profile" 
+                className="avatar-image"
+              />
+            </div>
+            {!isCollapsed && (
+              <div className="profile-info">
+                <div className="profile-name">John Doe</div>
+                <div className="profile-role">Admin</div>
+              </div>
+            )}
+          </div>
+          
           <button
             onClick={() => setDarkMode(!darkMode)}
             className="theme-toggle"
