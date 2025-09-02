@@ -30,14 +30,7 @@ const Navigation: React.FC<NavProps> = ({ darkMode, setDarkMode }) => {
       {/* Sidebar */}
       <div className={`sidebar ${isCollapsed ? 'collapsed' : ''} ${isMobileMenuOpen ? 'mobile-open' : ''} ${darkMode ? 'dark' : 'light'}`}>
         <div className="sidebar-header">
-          <img
-            src={darkMode ? appLogoDark : appLogoLight}
-            className="sidebar-logo"
-            alt="trend-tracker"
-          />
-          {!isCollapsed && (
-            <h2 className="sidebar-title">Trend Tracker</h2>
-          )}
+          <h2 className="sidebar-title">Trend Tracker</h2>
         </div>
 
         <nav className="sidebar-nav">

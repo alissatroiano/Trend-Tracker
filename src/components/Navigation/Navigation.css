@@ -31,30 +31,18 @@
   padding: 2rem 1.5rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  gap: 1rem;
+  justify-content: center;
 }
 
 .sidebar.dark .sidebar-header {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.sidebar-logo {
-  width: 80px;
-  height: 80px;
-  object-fit: contain;
-  transition: all 0.3s ease;
-}
-
-.sidebar.collapsed .sidebar-logo {
-  width: 50px;
-  height: 50px;
-}
-
 .sidebar-title {
   font-family: "Futura-PT", sans-serif;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;
