@@ -91,9 +91,8 @@ getOptions(darkMode: boolean, data: number[]) {
               options={this.state.options}
               series={this.state.series}
               type="bar"
-              width="400px"
+              width="100%"
               height={300}
-              maxWidth="100%"
             />
           </div>
         </div>
