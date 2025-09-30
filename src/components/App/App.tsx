@@ -57,20 +57,20 @@ function App() {
               <div className="card-content">
                 <div className="stats-grid">
                   <div className="stat-item">
-                    <div className="stat-value">1,234</div>
-                    <div className="stat-label">Total Users</div>
+                    <div className="stat-value">49</div>
+                    <div className="stat-label">Total New Users (10 days)</div>
                   </div>
                   <div className="stat-item">
-                    <div className="stat-value">+12%</div>
-                    <div className="stat-label">Growth Rate</div>
+                    <div className="stat-value">+6</div>
+                    <div className="stat-label">Net Growth</div>
                   </div>
                   <div className="stat-item">
-                    <div className="stat-value">89</div>
-                    <div className="stat-label">Active Today</div>
+                    <div className="stat-value">13</div>
+                    <div className="stat-label">Peak Day</div>
                   </div>
                   <div className="stat-item">
-                    <div className="stat-value">4.2</div>
-                    <div className="stat-label">Avg. Session</div>
+                    <div className="stat-value">4.9</div>
+                    <div className="stat-label">Daily Average</div>
                   </div>
                 </div>
               </div>
@@ -83,24 +83,31 @@ function App() {
               <div className="card-content">
                 <div className="activity-list">
                   <div className="activity-item">
-                    <div className="activity-icon">👤</div>
+                    <div className="activity-icon">📈</div>
                     <div className="activity-text">
-                      <div className="activity-title">New user registered</div>
-                      <div className="activity-time">2 minutes ago</div>
+                      <div className="activity-title">Peak day: 13 new users registered</div>
+                      <div className="activity-time">Yesterday</div>
+                    </div>
+                  </div>
+                  <div className="activity-item">
+                    <div className="activity-icon">📉</div>
+                    <div className="activity-text">
+                      <div className="activity-title">3 users lost today</div>
+                      <div className="activity-time">2 hours ago</div>
+                    </div>
+                  </div>
+                  <div className="activity-item">
+                    <div className="activity-icon">⚡</div>
+                    <div className="activity-text">
+                      <div className="activity-title">7 users gained in latest period</div>
+                      <div className="activity-time">4 hours ago</div>
                     </div>
                   </div>
                   <div className="activity-item">
                     <div className="activity-icon">📊</div>
                     <div className="activity-text">
-                      <div className="activity-title">Analytics updated</div>
-                      <div className="activity-time">15 minutes ago</div>
-                    </div>
-                  </div>
-                  <div className="activity-item">
-                    <div className="activity-icon">🎯</div>
-                    <div className="activity-text">
-                      <div className="activity-title">Goal achieved</div>
-                      <div className="activity-time">1 hour ago</div>
+                      <div className="activity-title">10-day trend analysis complete</div>
+                      <div className="activity-time">6 hours ago</div>
                     </div>
                   </div>
                 </div>
