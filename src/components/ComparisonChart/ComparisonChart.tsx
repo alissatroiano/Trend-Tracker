@@ -16,7 +16,7 @@ class ComparisonChart extends Component<Props, State> {
     super(props);
 
     const fullData = [2, -3, 5, 1, -1, 0, -2, 4, 1, -2, 5, 7, -3, 0, 1, -1];
-    const data = fullData.slice(-10);
+    const data = fullData;
 
     const gains = data.map(val => (val > 0 ? val : 0));
     const losses = data.map(val => (val < 0 ? Math.abs(val) : 0));

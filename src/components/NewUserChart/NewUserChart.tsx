@@ -16,8 +16,8 @@ class NewUserChart extends Component<Props, State> {
   constructor(props: Props) {
     super(props);
 
-    const fullData = [3, 5, 1, 0, 2, 7, 1, 9, 13, 3, 5, 6, 1, 0];
-    const data = fullData.slice(-10);
+    const fullData = [3,5,1,0,2,7,1,9,13,3,5,6,1,0];
+    const data = fullData;
 
     this.state = {
       options: this.getOptions(props.darkMode, data),
